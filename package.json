@@ -1,6 +1,6 @@
 {
   "name": "@lasnutrias/nestjs-request-scope",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Creates a request scope for nestjs projects",
   "author": "@lasnutrias",
   "license": "Apache-2.0",
@@ -8,6 +8,8 @@
     "type": "git",
     "url": "https://github.com/lasnutrias/nestjs-request-scope.git"
   },
+  "main": "dist/index.js",
+  "types": "dist/index.d.ts",
   "files": [
     "dist/*.{ts,js,map}"
   ],
