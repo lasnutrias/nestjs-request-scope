@@ -16,7 +16,6 @@ export class RequestScope {
   }
 
   static setValue<V>(key: string, value: LikeValue<V>) {
-    const store = this.als.getStore();
-    store?.set(key, value);
+    this.als.getStore()?.set(key, value);
   }
 }

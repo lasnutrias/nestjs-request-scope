@@ -1,6 +1,6 @@
 {
   "name": "@lasnutrias/nestjs-request-scope",
-  "version": "1.0.1",
+  "version": "1.1.0",
   "description": "Creates a request scope for nestjs projects",
   "author": "@lasnutrias",
   "license": "Apache-2.0",

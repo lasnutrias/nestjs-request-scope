@@ -5,15 +5,18 @@ import {
   NestInterceptor,
 } from '@nestjs/common';
 import { Observable } from 'rxjs';
-import { RequestScope } from '../src';
+import { RequestScopeService } from '../src';
+
+const requestId = 'requestId';
 
 @Injectable()
 export class AppInterceptor implements NestInterceptor {
+  constructor(private readonly requestScope: RequestScopeService) {}
   private static id = 0;
 
-  intercept(context: ExecutionContext, next: CallHandler): Observable<any> {
+  intercept(_: ExecutionContext, next: CallHandler): Observable<any> {
     AppInterceptor.id++;
-    RequestScope.setValue('requestId', AppInterceptor.id.toString());
+    this.requestScope.set(requestId, AppInterceptor.id.toString());
     return next.handle();
   }
 }
