@@ -1,0 +1,14 @@
+{
+  "directory": [
+    "./src"
+  ],
+  "exclude": [
+    "\\.spec\\.ts$",
+    "\\.test\\.ts$",
+    "\\.e2e-spec\\.ts$",
+    "main.ts"
+  ],
+  "delete": true,
+  "location": "all",
+  "singleQuotes": true
+}

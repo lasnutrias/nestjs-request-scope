@@ -5,7 +5,7 @@ import {
   NestInterceptor,
 } from '@nestjs/common';
 import { Observable } from 'rxjs';
-import { RequestScopeService } from '../src';
+import { RequestScopeService } from '../../src';
 
 const requestId = 'requestId';
 
